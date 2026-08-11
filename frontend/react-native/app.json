@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Bytes",
+    "slug": "bytes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "bytes",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F0"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.bytes.kitchen",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bytes uses the camera so you can photograph a dish after you cook it."
+      }
+    },
+    "android": {
+      "package": "app.bytes.kitchen",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#C1502E"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Bytes uses the camera so you can photograph a dish after you cook it."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "95036348-3552-4d35-8de4-2d77830ececb"
+      }
+    },
+    "owner": "dominicgodfrey"
+  }
+}
